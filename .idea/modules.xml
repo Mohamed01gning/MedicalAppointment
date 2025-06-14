@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Rv-Medcial.iml" filepath="$PROJECT_DIR$/.idea/Rv-Medcial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/admin-service/admin-service.iml" filepath="$PROJECT_DIR$/admin-service/admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cnx-service/cnx-service.iml" filepath="$PROJECT_DIR$/cnx-service/cnx-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medecin-service/medecin-service.iml" filepath="$PROJECT_DIR$/medecin-service/medecin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rv-service/rv-service.iml" filepath="$PROJECT_DIR$/rv-service/rv-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/secretaire-service/secretaire-service.iml" filepath="$PROJECT_DIR$/secretaire-service/secretaire-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service1/service1.iml" filepath="$PROJECT_DIR$/service1/service1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service2/service2.iml" filepath="$PROJECT_DIR$/service2/service2.iml" />
+    </modules>
+  </component>
+</project>
