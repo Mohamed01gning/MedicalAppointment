@@ -1,0 +1,41 @@
+<div id="secList">
+    <div id="tableCont">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+            <ng-container matColumnDef="matricule">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Matricule</th>
+                <td mat-cell *matCellDef="let sec">{{sec.matricule}}</td>
+            </ng-container>
+            <ng-container matColumnDef="nom">
+                <th mat-header-cell *matHeaderCellDef>Nom</th>
+                <td mat-cell *matCellDef="let sec">{{sec.nom}}</td>
+            </ng-container>
+            <ng-container matColumnDef="prenom">
+                <th mat-header-cell *matHeaderCellDef>Prenom</th>
+                <td mat-cell *matCellDef="let sec">{{sec.prenom}}</td>
+            </ng-container>
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef>Email</th>
+                <td mat-cell *matCellDef="let sec">{{sec.email}}</td>
+            </ng-container>
+            <ng-container matColumnDef="tel">
+                <th mat-header-cell *matHeaderCellDef>Tel</th>
+                <td mat-cell *matCellDef="let sec">{{sec.tel}}</td>
+            </ng-container>
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef>Action</th>
+                <td mat-cell *matCellDef="let sec">
+                    <span class="material-icons delete" (click)="deleteMedecin(sec)">delete</span>    
+                </td>
+            </ng-container>
+
+            <tr class="mat-header-row" mat-header-row *matHeaderRowDef="displayColumns"></tr>
+            <tr class="mat-row" mat-row *matRowDef="let row ; columns : displayColumns;"></tr>
+        </table>
+        <mat-paginator
+            pageSize="5"
+            showFirstLastButtons
+            hidePageSize
+        >
+        </mat-paginator>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+#fullCnx
+{
+    background-color: rgb(228, 234, 240);
+    width: 1365px;
+    height: 607px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#cnxMenu
+{
+    background-color: rgb(97, 97, 218);
+    box-shadow: 3px 3px 2px black;
+    border-radius: 5px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: 10px;
+}
+
+#title
+{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 6px;
+    left: 25px;
+    color: white;
+}
+
+.in
+{
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+ label
+ {
+    font-size: 25px;
+    color: white;
+ }
+
+ label,.in
+ {
+    position: relative;
+    left: 15px;
+ }
+
+ button
+ {
+    position: relative;
+    left: 15px;
+    top: 20px;
+    border-radius: 5px;
+    width: 357px;
+    height: 45px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(230, 138, 96);
+    cursor: pointer;
+ }
+ button:hover
+ {
+    background-color: red
+ }
+
+ #err
+ {
+    color: red;
+    font-size: 17px;
+    position : relative;
+    left: 26px;
+    top: 10px;
+ }
+ .icon
+ {
+    position: relative;
+    right: 10px;
+    top: 4px;
+    cursor: pointer;
+ }

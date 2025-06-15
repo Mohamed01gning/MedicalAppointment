@@ -1,0 +1,47 @@
+<div id="adminAdd">
+    <div id="image">
+        <img [src]="fileUrl" alt="profil" width="85" height="90px" style="border-radius: 5%; object-fit: cover;">
+    </div>
+    <div id="formCont"> 
+        <form id="form" enctype="multipart/form-data" (submit)="onSubmit()">
+            <div class="inputCont">
+                <label for="image">Ajouter une Image de Profil</label>
+                <input #profilIn type="file" hidden (change)="selectFile($event)" name="image" id="image" class="input">
+                <button type="button" id="imageButton" (click)="onClick()"><span class="material-icons">add</span></button>
+            </div>
+            <div class="inputCont">
+                <label for="nom">Nom </label>
+                <input type="text" name="nom" id="prenom" class="input" [(ngModel)]="user.nom">
+                <span class="err" *ngIf="validationError.nom">{{validationError.nom}}</span>
+            </div>
+            <div class="inputCont">
+                <label for="prenom">Prenom </label>
+                <input type="text" name="prenom" id="prenom" class="input" [(ngModel)]="user.prenom">
+                <span class="err" *ngIf="validationError.prenom">{{validationError.prenom}}</span>
+            </div>
+            <div class="inputCont">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="input" [(ngModel)]="user.email">
+                <span class="err" *ngIf="validationError.email">{{validationError.email}}</span>
+            </div>
+            <div class="inputCont">
+                <label for="tel">N° Telephone </label>
+                <input type="text" name="tel" id="tel" class="input" [(ngModel)]="user.tel">
+                <span class="err" *ngIf="validationError.tel">{{validationError.tel}}</span>
+            </div>
+            <div class="radioInputCont"> 
+                <p>Fonction Du Personnel A Ajouter: </p>
+                <label for="med">MEDECIN</label> 
+                <label for="sec">SECRETAIRE</label>
+                <label for="med">ADMIN</label> <br>
+                <input type="radio" name="role" id="med" value="MED" class="radioInput med" [(ngModel)]="role">
+                <input type="radio" name="role" id="sec" value="SEC" class="radioInput sec" [(ngModel)]="role">
+                <input type="radio" name="role" id="admin" value="ADMIN" class="radioInput ad" [(ngModel)]="role">
+                
+            </div>
+            <div>
+                <button type="submit" id="button">AJOUTER</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>FORMULAIRE D'AJOUT DE RENDEZ-VOUS</h2>
+<mat-dialog-content class="mat-dialog-content">
+    <div id="formCont">
+        <div class="inputCont">
+            <label for="nom">Nom </label>
+            <input type="text" name="nom" id="prenom" class="input" [(ngModel)]="user.nomPatient">
+            <span class="err" *ngIf="error.nomPatient">{{error.nomPatient}}</span>
+        </div>
+        <div class="inputCont">
+            <label for="prenom">Prenom </label>
+            <input type="text" name="prenom" id="prenom" class="input" [(ngModel)]="user.prenomPatient">
+            <span class="err" *ngIf="error.prenomPatient">{{error.prenomPatient}}</span>
+        </div>
+        <div class="inputCont">
+            <label for="tel">N° Telephone </label>
+            <input type="text" name="tel" id="tel" class="input" [(ngModel)]="user.tel">
+            <span class="err" *ngIf="error.tel">{{error.tel}}</span>
+        </div>
+        <div class="inputCont">
+            <label for="tel">Date </label>
+            <input type="date" name="date" id="date" class="input" [(ngModel)]="user.date">
+            <span class="err"></span>
+        </div>
+        <div class="inputCont">
+            <label for="tel">Time</label>
+            <input type="time" name="timr" id="time" class="input" [(ngModel)]="user.time">
+            <span class="err"></span>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button type="button" id="closeButton" (click)="onClose()">ANNULER</button>
+    <button type="button" (click)="onSubmit()" id="button">AJOUTER</button>
+</mat-dialog-actions>

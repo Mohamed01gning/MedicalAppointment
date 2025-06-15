@@ -1,0 +1,47 @@
+<div id="menuCont">
+    <div id="links">
+        <p id="linkTitle">MENU</p>
+        <div class="link">
+            <a [routerLink]="['/admin/home']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">home</span>Home
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/admin/add']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">add</span>Ajout
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/admin/listAdmin']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">person</span>Liste Administrateur
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/admin/med']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">medical_services</span>Liste Medecin
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/admin/sec']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">support_agent</span>Liste Secretaire
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/admin/rv']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">event</span>Rendez-Vous
+            </a>
+        </div>
+        <p id="logOutTitle">OTHERS</p>
+        <div class="link">
+            <a [routerLink]="['/cnx']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">logout</span>Log Out
+            </a>
+        </div>
+    </div>
+    <div id="profil">
+        <div id="tof"><img [src]="imageUrl" alt="profil" width="40" height="40" style="border-radius: 100%; object-fit: cover;"></div>
+        <p id="info"><span id="nom">{{admin.prenom}} {{admin.nom}}</span><br><span id="mat">{{matricule}}</span> </p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

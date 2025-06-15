@@ -1,0 +1,33 @@
+<div id="fullCnx">
+    <div id="cnxMenu">
+        <p id="title">Password Setting</p>
+        <div id="formCont">
+            <form (submit)="definePasword()">
+                <div>
+                    <label for="mat">Matricule</label><br>
+                    <input type="text" name="mat" id="mat" class="in" [(ngModel)]="user.matricule">
+                </div>
+                <div>
+                    <label for="fonction">Fonction</label><br>
+                    <input type="text" name="fonction" id="fonction" class="in" [(ngModel)]="user.fonction" placeholder="Medecin or Secretaire or Administrateur">
+                </div>
+                <div>
+                    <label for="pwd">Password</label><br>
+                    <input #inPwd type="password" name="pwd" id="pwd" class="in" [(ngModel)]="user.pwd">
+                    <span class="material-icons md-36 icon" (click)="changeIconPwd($event)">visibility</span>
+                </div>
+                <div>
+                    <label for="pwdConf">Confirm Password</label><br>
+                    <input #inPwdConf type="password" name="pwdConf" id="pwdConf" class="in" [(ngModel)]="user.pwdConf">
+                    <span class="material-icons md-36 icon" (click)="changeIconPwdConf($event)">visibility</span>
+                </div>
+                <div>
+                    <button type="submit">Confirmer</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</div>

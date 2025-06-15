@@ -1,0 +1,99 @@
+#menuCont
+{
+    background-color: rgb(97, 97, 218);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 210px;
+    height: 100%;
+}
+
+.link
+{
+    border-radius: 5px;
+    height: 35px;
+    width: 190px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    
+}
+
+.link:hover
+{
+    background-color:rgba(255, 255, 255, 0.2);
+} 
+
+.link a
+{
+    color: rgba(255, 255, 255,0.8);
+    display: block;
+    text-decoration: none;
+}
+
+#links
+{
+    border-bottom: 1px solid rgba(255, 255, 255,0.8);
+    height: 400px;
+    position: relative;
+    top: 30px;
+}
+
+#linkTitle
+{
+    color: rgb(255, 255, 255);
+    width: 30%;
+    position: relative;
+    left :20px;
+}
+
+#logOutTitle
+{
+    color: rgb(255, 255, 255);
+    width: 30%;
+    position: relative;
+    left :20px;
+    top: 13px;
+    
+}
+
+.icons
+{
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+}
+
+#tof
+{
+
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 118px;
+    left: 8px;
+
+}
+
+#info
+{
+    width: 140px;
+    position: relative;
+    left: 60px;
+    top: 65px;
+    font-size: 15px;
+}
+
+#nom
+{
+    color: rgba(255, 255, 255,0.8);;
+    font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif
+}
+
+#mat
+{
+    color: rgba(255, 255, 255,0.6);;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

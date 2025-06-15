@@ -1,0 +1,10 @@
+<div id="dialog">
+    <h1 mat-dialog-title><span class="material-icons md28" style="color: red; font-size: 50px;">warning</span></h1>
+    <mat-dialog-content id="content">
+        {{data.content}}
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button type="button" (click)="close($event)">OUI</button>
+        <button type="button" (click)="close($event)">NON</button>
+    </mat-dialog-actions>
+</div>

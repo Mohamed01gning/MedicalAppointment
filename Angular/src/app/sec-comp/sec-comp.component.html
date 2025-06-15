@@ -1,0 +1,48 @@
+<div id="menuCont">
+    <div id="links">
+        <p id="linkTitle">MENU</p>
+        <div class="link">
+            <a [routerLink]="['/sec/home']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">home</span>Home
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/sec/add']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">add</span>Ajout
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/sec/fixedRv']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">event</span>Vos Rendez-Vous 
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/sec/todayRv']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">event</span>Rendez-Vous Du Jour
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/sec/rv']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">event</span>Rendez-Vous 
+            </a>
+        </div>
+        <div class="link">
+            <a [routerLink]="['/sec/med']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">medical_services</span>Liste Medecin
+            </a>
+        </div>
+        <p id="logOutTitle">OTHERS</p>
+        <div class="link">
+            <a [routerLink]="['/cnx']" routerLinkActive="router-link-active" >
+                <span class="material-icons icons">logout</span>Log Out
+            </a>
+        </div>
+    </div>
+    <div id="profil">
+        <div id="tof"><img [src]="imageUrl" alt="profil" width="40" height="40" style="border-radius: 100%; object-fit: cover;"></div>
+        <p id="info"><span id="nom">{{sec.prenom}} {{sec.nom}}</span><br><span id="mat">{{sec.matricule}}</span> </p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+

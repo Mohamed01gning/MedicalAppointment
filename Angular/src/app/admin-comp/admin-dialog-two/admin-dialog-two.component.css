@@ -1,0 +1,26 @@
+#dialog
+{
+    background-color: rgb(228, 234, 240);
+}
+
+h1
+{
+    
+    display: inline-block;
+    position: relative;
+    left: 34%;
+    font-size: 25px;
+}
+
+button
+{
+    background-color: rgb(97, 97, 218);;
+    color: blanchedalmond;
+    height: 25px;
+    cursor: pointer;
+}
+
+#content
+{
+    font-size: 20px;
+}

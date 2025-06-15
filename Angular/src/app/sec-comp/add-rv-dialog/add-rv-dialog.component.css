@@ -1,0 +1,80 @@
+#formCont
+{
+    width: 950px;
+    height: 450px;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 1px darkblue;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+}
+
+
+.inputCont
+{
+    height: 70px;
+    position: relative;
+    left:10px;
+    top: 5px;
+}
+
+.inputCont label
+{
+    font-size: larger;
+    position: relative;
+    top: 5px;
+}
+
+.input
+{
+    position: absolute;
+    left: 150px;
+    width: 260px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#closeButton
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+}
+
+#closeButton:hover
+{
+     background-color: rgb(8, 8, 146);
+}
+
+
+#button
+{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+}
+
+#button:hover
+{
+     background-color: rgb(8, 8, 146);
+}
+
+.err
+{
+    color: red;
+    position: absolute;
+    left: 420px;
+    top: 6px;
+}
+

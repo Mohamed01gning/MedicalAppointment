@@ -1,0 +1,26 @@
+<div id="fullCnx">
+
+    <div id="cnxMenu">
+        <p id="title">Welcome Back</p>
+        <p id="sign">Sign Up <span id="pwdSetting"><a [routerLink]="['/cnx/pwd']" routerLinkActive="router-link-active" >or set your Password</a></span></p>
+        <div id="formCont">
+            <form #cnxForm="ngForm" (submit)="onSubmit()">
+                <div>
+                    <label for="mat">Matricule</label><br>
+                    <input type="text" name="mat" id="mat" class="in" [(ngModel)]="user.matricule">
+                </div>
+                <div>
+                    <label for="pwd">Password</label><br>
+                    <input #inPwd type="password" name="pwd" id="pwd" class="in" [(ngModel)]="user.pwd">
+                    <span class="material-icons md-36 icon" (click)="changeIconPwd($event)">visibility</span>
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+                <p id="err" *ngIf="errorRes">{{errorRes}}</p>
+            </form>
+        </div>
+    </div>
+
+
+</div>

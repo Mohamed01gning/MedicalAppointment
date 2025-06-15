@@ -1,0 +1,125 @@
+#adminAdd
+{
+    background-color: rgb(228, 234, 240);
+    width: 100%;
+    height: 100%;
+}
+
+#formCont
+{
+    width: 970px;
+    height: 550px;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 1px darkblue;
+    position: absolute;
+    left: 290px;
+    top: 40px;
+}
+
+.inputCont
+{
+    height: 70px;
+    position: relative;
+    left: 35px;
+}
+.radioInputCont
+{
+    height: 110px;
+    position: relative;
+    left: 35px;
+}
+
+.radioInputCont label
+{
+    font-size: larger;
+    margin-right: 40px;
+    position: relative;
+    left: 200px;
+}
+
+.inputCont label
+{
+    font-size: larger;
+    position: relative;
+    top: 5px;
+}
+
+.input
+{
+    position: absolute;
+    left: 150px;
+    width: 260px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#form
+{
+    position: relative;
+    top: 40px;
+}
+
+.med
+{
+    position: relative;
+    left: 230px;
+}
+
+.sec
+{
+    position: relative;
+    left: 343px;
+}
+
+.ad
+{
+    position: relative;
+    left: 452px;
+}
+
+#button
+{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    left: 350px;
+    top: 0px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+}
+
+#button:hover
+{
+     background-color: rgb(8, 8, 146);
+}
+
+.err
+{
+    color: red;
+    position: absolute;
+    left: 420px;
+    top: 6px;
+}
+
+#imageButton
+{
+    position: relative;
+    left: 20px;
+    top: 8px;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+}
+
+#image
+{
+    width: 85px;
+    height: 90px;
+    position : absolute;
+    left: 760px;
+    top: 47px;
+    border: 1px solid black;
+
+}

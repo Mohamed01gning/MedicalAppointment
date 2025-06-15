@@ -1,0 +1,31 @@
+#OUI
+{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+}
+
+#NON
+{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: rgb(97, 97, 218);
+    cursor: pointer;
+}
+
+button
+{
+    margin:5px;
+}
+
+#OUI:hover,#NON:hover
+{
+     background-color: rgb(8, 8, 146);
+}
